@@ -8,36 +8,36 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-500 text-white flex justify-center items-center min-h-screen">
-    <div class="w-full max-w-xl mx-auto bg-gray-800 p-8 rounded-2xl shadow-2xl">
-        <h1 class="text-4xl font-bold mb-8 text-center tracking-wide">CountDown App</h1>
-        <div id="countdown" class="flex flex-wrap justify-center gap-6 mb-8">
-            <div class="flex flex-col items-center bg-blue-100 rounded-lg shadow-md p-6 min-w-[90px] transition-transform hover:scale-105">
-                <span id="days" class="text-blue-600 text-4xl font-mono font-bold">00</span>
-                <span class="text-blue-700 mt-2 font-semibold uppercase text-xs tracking-wider">Days</span>
+<body class="bg-gray-500 text-white flex justify-center items-center min-h-screen p-4">
+    <div class="w-full max-w-xl mx-auto bg-gray-800 p-4 sm:p-8 rounded-2xl shadow-2xl">
+        <h1 class="text-2xl sm:text-4xl font-bold mb-6 sm:mb-8 text-center tracking-wide">CountDown App</h1>
+        <div id="countdown" class="flex flex-wrap justify-center gap-3 sm:gap-6 mb-6 sm:mb-8">
+            <div class="flex flex-col items-center bg-blue-100 rounded-lg shadow-md p-3 sm:p-6 min-w-[70px] sm:min-w-[90px] transition-transform hover:scale-105">
+                <span id="days" class="text-blue-600 text-2xl sm:text-4xl font-bold">00</span>
+                <span class="text-blue-700 mt-1 sm:mt-2 font-semibold uppercase text-xs tracking-wider">Days</span>
             </div>
-            <div class="flex flex-col items-center bg-green-100 rounded-lg shadow-md p-6 min-w-[90px] transition-transform hover:scale-105">
-                <span id="hours" class="text-green-600 text-4xl font-mono font-bold">00</span>
-                <span class="text-green-700 mt-2 font-semibold uppercase text-xs tracking-wider">Hours</span>
+            <div class="flex flex-col items-center bg-green-100 rounded-lg shadow-md p-3 sm:p-6 min-w-[70px] sm:min-w-[90px] transition-transform hover:scale-105">
+                <span id="hours" class="text-green-600 text-2xl sm:text-4xl font-bold">00</span>
+                <span class="text-green-700 mt-1 sm:mt-2 font-semibold uppercase text-xs tracking-wider">Hours</span>
             </div>
-            <div class="flex flex-col items-center bg-yellow-100 rounded-lg shadow-md p-6 min-w-[90px] transition-transform hover:scale-105">
-                <span id="minutes" class="text-yellow-600 text-4xl font-mono font-bold">00</span>
-                <span class="text-yellow-700 mt-2 font-semibold uppercase text-xs tracking-wider">Minutes</span>
+            <div class="flex flex-col items-center bg-yellow-100 rounded-lg shadow-md p-3 sm:p-6 min-w-[70px] sm:min-w-[90px] transition-transform hover:scale-105">
+                <span id="minutes" class="text-yellow-600 text-2xl sm:text-4xl font-bold">00</span>
+                <span class="text-yellow-700 mt-1 sm:mt-2 font-semibold uppercase text-xs tracking-wider">Minutes</span>
             </div>
-            <div class="flex flex-col items-center bg-red-100 rounded-lg shadow-md p-6 min-w-[90px] transition-transform hover:scale-105">
-                <span id="seconds" class="text-red-600 text-4xl font-mono font-bold">00</span>
-                <span class="text-red-700 mt-2 font-semibold uppercase text-xs tracking-wider">Seconds</span>
+            <div class="flex flex-col items-center bg-red-100 rounded-lg shadow-md p-3 sm:p-6 min-w-[70px] sm:min-w-[90px] transition-transform hover:scale-105">
+                <span id="seconds" class="text-red-600 text-2xl sm:text-4xl font-bold">00</span>
+                <span class="text-red-700 mt-1 sm:mt-2 font-semibold uppercase text-xs tracking-wider">Seconds</span>
             </div>
         </div>
         <div class="mb-2 flex justify-between items-center">
-            <h2 class="text-lg font-semibold">Progress</h2>
-            <span id="progress-label" class="text-sm text-gray-300">0%</span>
+            <h2 class="text-base sm:text-lg font-semibold">Progress</h2>
+            <span id="progress-label" class="text-xs sm:text-sm text-gray-300">0%</span>
         </div>
-        <div class="w-full h-5 bg-gray-700 rounded-full overflow-hidden mb-6">
+        <div class="w-full h-4 sm:h-5 bg-gray-700 rounded-full overflow-hidden mb-6">
             <div id="progress-bar" class="bg-gradient-to-r from-green-400 to-blue-500 h-full rounded-full transition-all duration-500" style="width: 0%"></div>
         </div>
         <div class="flex justify-center">
-            <button id="reset-btn" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg shadow transition-colors duration-200">Reset</button>
+            <button id="set-date-btn" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 sm:py-3 px-6 sm:px-8 rounded-lg shadow-lg transition-all duration-200 transform hover:scale-105 text-sm sm:text-base">Set New Countdown</button>
         </div>
     </div>
     <script src="script.js"></script>

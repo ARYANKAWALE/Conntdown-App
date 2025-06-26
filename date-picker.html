@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Countdown Date - CountDown App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-500 text-white flex justify-center items-center min-h-screen p-4">
+    <div class="w-full max-w-md mx-auto bg-gray-800 p-4 sm:p-8 rounded-2xl shadow-2xl">
+        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center tracking-wide">Set Countdown Date</h1>
+        <p class="text-gray-400 text-center mb-6 sm:mb-8 text-sm sm:text-base">Choose when you want your countdown to end</p>
+        
+        <form id="date-form" class="space-y-4 sm:space-y-6">
+            <div>
+                <label for="countdown-date" class="block text-sm font-medium mb-2">Date</label>
+                <input 
+                    type="date" 
+                    id="countdown-date" 
+                    name="countdown-date" 
+                    class="w-full px-3 sm:px-4 py-2 sm:py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white transition-all duration-200 text-sm sm:text-base"
+                    required
+                >
+            </div>
+            
+            <div>
+                <label for="countdown-time" class="block text-sm font-medium mb-2">Time</label>
+                <input 
+                    type="time" 
+                    id="countdown-time" 
+                    name="countdown-time" 
+                    class="w-full px-3 sm:px-4 py-2 sm:py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white transition-all duration-200 text-sm sm:text-base"
+                    required
+                >
+            </div>
+            
+            <div class="flex justify-center">
+                <button 
+                    type="submit" 
+                    class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 sm:py-3 px-6 sm:px-8 rounded-lg shadow-lg transition-all duration-200 transform hover:scale-105 text-sm sm:text-base"
+                >
+                    Start Countdown
+                </button>
+            </div>
+        </form>
+        
+        <div class="mt-6 sm:mt-8 text-center">
+            <a href="index.html" class="text-blue-400 hover:text-blue-300 text-xs sm:text-sm transition-colors duration-200">← Back to Countdown</a>
+        </div>
+    </div>
+    
+    <script src="date-picker.js"></script>
+</body>
+
+</html> 
