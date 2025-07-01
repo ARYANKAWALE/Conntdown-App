@@ -27,9 +27,9 @@ cd Countdown-App
 npm install
 ```
 
-3. Start development server:
+3. Start development server (with watch mode):
 ```bash
-npm run build
+npm run dev
 ```
 
 4. Open `index.html` in your browser
@@ -42,7 +42,7 @@ This project uses GitHub Actions for automatic deployment. Simply push to the ma
 
 To build the production CSS locally:
 ```bash
-npm run build:prod
+npm run build
 ```
 
 ## Project Structure

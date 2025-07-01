@@ -5,7 +5,8 @@
   "main": "index.html",
   "homepage": "https://aryankawale.github.io/Countdown-App",
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
     "build:prod": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
   },
   "keywords": ["countdown", "timer", "tailwind"],
