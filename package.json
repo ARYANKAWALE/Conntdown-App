@@ -3,12 +3,10 @@
   "version": "1.0.0",
   "description": "A countdown timer application with Tailwind CSS",
   "main": "index.html",
-  "homepage": "https://[your-username].github.io/countdown-app",
+  "homepage": "https://aryankawale.github.io/Countdown-App",
   "scripts": {
     "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "build:prod": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
-    "predeploy": "npm run build:prod",
-    "deploy": "gh-pages -d ."
+    "build:prod": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
   },
   "keywords": ["countdown", "timer", "tailwind"],
   "author": "",
@@ -16,7 +14,6 @@
   "devDependencies": {
     "tailwindcss": "^3.4.0",
     "autoprefixer": "^10.4.16",
-    "postcss": "^8.4.32",
-    "gh-pages": "^6.1.0"
+    "postcss": "^8.4.32"
   }
 } 
